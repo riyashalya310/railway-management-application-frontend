@@ -5,7 +5,7 @@ const Booking = ({ token, train }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const response = await axios.post(
-      `http://localhost:8000/api/trains/${train.id}/book/`,
+      `https://railway-management-application-backend.onrender.com/api/trains/${train.id}/book/`,
       {},
       {
         headers: {

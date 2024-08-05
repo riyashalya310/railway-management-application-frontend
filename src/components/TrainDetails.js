@@ -6,7 +6,7 @@ const TrainDetails = ({ token, train }) => {
 
   const fetchSeats = async () => {
     const response = await axios.get(
-      `http://localhost:8000/api/trains/${train.id}/seats/`,
+      `https://railway-management-application-backend.onrender.com/api/trains/${train.id}/seats/`,
       {
         headers: {
           Authorization: `Bearer ${token}`,
